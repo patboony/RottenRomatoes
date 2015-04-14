@@ -13,6 +13,9 @@ class MovieDetailViewController: UIViewController {
     @IBOutlet weak var posterView: UIImageView!
     @IBOutlet weak var descriptionView: UIScrollView!
     @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var descriptionBackground: UIView!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var scoreLabel: UILabel!
     
     var photoURL: String = ""
     var currentMovie: NSDictionary = NSDictionary()
@@ -31,14 +34,27 @@ class MovieDetailViewController: UIViewController {
         super.viewDidLoad()
         
         navigationItem.title = currentMovie["title"] as? String
-
-        // Do any additional setup after loading the view.
+        descriptionView.bounces = false
+        
+        // Load low-res images first
+        posterView.setImageWithURL(NSURL(string: currentMovie.valueForKeyPath("posters.original") as! String))
+        
+        // Load high-res afterward
         var photoURL = convertToHiResURL(currentMovie.valueForKeyPath("posters.original") as! String)
-        
         posterView.setImageWithURL(NSURL(string: photoURL))
-        descriptionLabel.text = currentMovie["synopsis"] as? String
         
-        descriptionView.contentSize = CGSizeMake(320, 700);
+        titleLabel.text = currentMovie["title"] as? String
+        var critics_score = currentMovie.valueForKeyPath("ratings.critics_score") as! Int
+        var audience_score = currentMovie.valueForKeyPath("ratings.audience_score") as! Int
+        scoreLabel.text = "Critics Score: " + String(critics_score) + ", Audience Score: " + String(audience_score)
+        
+        descriptionLabel.text = currentMovie["synopsis"] as! String + "\r\n\r\n"
+        descriptionLabel.sizeToFit()
+        
+        NSLog(String(stringInterpolationSegment: descriptionLabel.frame.height))
+        let contentWidth = descriptionView.bounds.width
+        let contentHeight = descriptionLabel.frame.height + 420
+        descriptionView.contentSize = CGSizeMake(contentWidth, contentHeight)
 
     }
 

@@ -129,6 +129,7 @@ class MovieListViewController: UIViewController, UITableViewDelegate, UITableVie
         cell.movieImageView.setImageWithURL(NSURL(string: photoURL))
         // Why use ?
         cell.movieTitleLabel.text = currentMovie["title"] as? String
+        cell.accessoryType = UITableViewCellAccessoryType.None
         
         var mpaa_rating = currentMovie["mpaa_rating"] as! String
         var synopsis = currentMovie["synopsis"] as! String

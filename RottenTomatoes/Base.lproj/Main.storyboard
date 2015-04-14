@@ -32,17 +32,17 @@
                                                             <rect key="frame" x="8" y="2" width="64" height="95"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                         </imageView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dvH-Z8-1D3">
-                                                            <rect key="frame" x="84" y="18" width="209" height="73"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="UA2-fy-P5O">
+                                                            <rect key="frame" x="84" y="5" width="194" height="21"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="UA2-fy-P5O">
-                                                            <rect key="frame" x="84" y="2" width="194" height="21"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dvH-Z8-1D3">
+                                                            <rect key="frame" x="84" y="24" width="225" height="73"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
@@ -81,23 +81,38 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="NU7-4v-hbw">
-                                <rect key="frame" x="-1" y="30" width="323" height="479"/>
+                                <rect key="frame" x="-1" y="30" width="323" height="490"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="JMW-XL-zBS">
-                                <rect key="frame" x="0.0" y="145" width="320" height="423"/>
+                                <rect key="frame" x="0.0" y="63" width="320" height="505"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <view alpha="0.80000000000000004" contentMode="scaleToFill" id="1XV-yZ-exj">
-                                        <rect key="frame" x="0.0" y="241" width="320" height="600"/>
+                                        <rect key="frame" x="0.0" y="323" width="323" height="600"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="UR6-nX-WUU">
-                                                <rect key="frame" x="12" y="8" width="300" height="429"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bbY-et-S1y">
+                                                <rect key="frame" x="10" y="13" width="300" height="28"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="NJE-LV-N9A">
+                                                <rect key="frame" x="10" y="38" width="300" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="none" adjustsFontSizeToFit="NO" id="UR6-nX-WUU">
+                                                <rect key="frame" x="10" y="67" width="300" height="64"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
+                                                <size key="shadowOffset" width="0.0" height="0.0"/>
                                             </label>
                                         </subviews>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -109,66 +124,108 @@
                     </view>
                     <navigationItem key="navigationItem" id="ejA-K5-M8D"/>
                     <connections>
+                        <outlet property="descriptionBackground" destination="1XV-yZ-exj" id="dYU-v7-Q3I"/>
                         <outlet property="descriptionLabel" destination="UR6-nX-WUU" id="vad-2D-knk"/>
                         <outlet property="descriptionView" destination="JMW-XL-zBS" id="t1a-6c-C15"/>
                         <outlet property="posterView" destination="NU7-4v-hbw" id="pXr-hb-TeT"/>
+                        <outlet property="scoreLabel" destination="NJE-LV-N9A" id="e8K-2T-IiC"/>
+                        <outlet property="titleLabel" destination="bbY-et-S1y" id="rfh-dM-kqj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pmL-Xb-bzL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1218" y="342"/>
         </scene>
-        <!--DVDs-->
-        <scene sceneID="xLg-bK-t0e">
-            <objects>
-                <tableViewController id="DFt-S0-cgD" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="yth-9y-bmW">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DVD Cell" id="2vO-ao-iKX">
-                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2vO-ao-iKX" id="bFy-UG-eET">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="DFt-S0-cgD" id="Iow-eZ-o9a"/>
-                            <outlet property="delegate" destination="DFt-S0-cgD" id="J6P-Vl-p6d"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="DVDs" id="8s7-hb-Afy"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ybG-X8-IyL" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="746" y="1070"/>
-        </scene>
-        <!--DVDs-->
+        <!--New DVDs-->
         <scene sceneID="v6b-Im-2wy">
             <objects>
                 <navigationController id="MvO-ff-d3q" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="DVDs" id="JZe-2m-7YI"/>
+                    <tabBarItem key="tabBarItem" title="New DVDs" image="iconmonstr-disc-3-icon.png" id="JZe-2m-7YI"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ofF-1A-F1h">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="DFt-S0-cgD" kind="relationship" relationship="rootViewController" id="dap-8A-l63"/>
+                        <segue destination="tXf-AX-6qF" kind="relationship" relationship="rootViewController" id="Pq7-Wv-33G"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qNv-ob-QWJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="338" y="1070"/>
         </scene>
+        <!--New DVDs-->
+        <scene sceneID="Jvq-cu-AE9">
+            <objects>
+                <viewController id="tXf-AX-6qF" customClass="DVDListViewController" customModule="RottenTomatoes" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="glF-k5-ZuP">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="ove-b2-yKr">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="127" sectionHeaderHeight="22" sectionFooterHeight="22" id="0w6-Es-Mgh">
+                                        <rect key="frame" x="-2" y="0.0" width="323" height="568"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <prototypes>
+                                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Movie Cell" rowHeight="100" id="OsI-q2-iZ6" customClass="MovieViewCell" customModule="RottenTomatoes" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="86" width="323" height="100"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="OsI-q2-iZ6" id="l6z-xK-jaj">
+                                                    <rect key="frame" x="0.0" y="0.0" width="290" height="99"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="z8k-AB-eE9">
+                                                            <rect key="frame" x="8" y="2" width="64" height="95"/>
+                                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="26g-bh-Spu">
+                                                            <rect key="frame" x="84" y="24" width="225" height="73"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="UXI-RM-5zY">
+                                                            <rect key="frame" x="84" y="5" width="194" height="21"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </tableViewCellContentView>
+                                                <connections>
+                                                    <outlet property="movieDescriptionLabel" destination="26g-bh-Spu" id="nnG-5L-OVi"/>
+                                                    <outlet property="movieImageView" destination="z8k-AB-eE9" id="qmX-nS-eMF"/>
+                                                    <outlet property="movieTitleLabel" destination="UXI-RM-5zY" id="dEy-0t-u1M"/>
+                                                    <segue destination="KI8-Gg-O7H" kind="push" id="seA-1w-F4t"/>
+                                                </connections>
+                                            </tableViewCell>
+                                        </prototypes>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="New DVDs" id="D41-h8-JQg"/>
+                    <connections>
+                        <outlet property="tableView" destination="0w6-Es-Mgh" id="Nfm-IP-xy7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4F1-2b-8QD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="740" y="1070"/>
+        </scene>
         <!--Now Playing-->
         <scene sceneID="P09-iY-u0f">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="sOF-TO-Ux2" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Now Playing" id="5Se-bw-ftY"/>
+                    <tabBarItem key="tabBarItem" title="Now Playing" image="iconmonstr-video-icon.png" id="5Se-bw-ftY"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="k0C-SD-8jI">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -203,9 +260,16 @@
             <point key="canvasLocation" x="-152" y="698"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="iconmonstr-disc-3-icon.png" width="30" height="30"/>
+        <image name="iconmonstr-video-icon.png" width="30" height="30"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="seA-1w-F4t"/>
+    </inferredMetricsTieBreakers>
 </document>

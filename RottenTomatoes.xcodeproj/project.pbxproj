@@ -12,6 +12,11 @@
 		43173F721AD8DF8300EC7DA2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43173F711AD8DF8300EC7DA2 /* Images.xcassets */; };
 		43173F751AD8DF8300EC7DA2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43173F731AD8DF8300EC7DA2 /* LaunchScreen.xib */; };
 		43173F811AD8DF8300EC7DA2 /* RottenTomatoesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43173F801AD8DF8300EC7DA2 /* RottenTomatoesTests.swift */; };
+		43691D281ADCC6E3003C949C /* iconmonstr-disc-3-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 43691D241ADCC6E3003C949C /* iconmonstr-disc-3-icon.png */; };
+		43691D291ADCC6E3003C949C /* iconmonstr-disc-3-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43691D251ADCC6E3003C949C /* iconmonstr-disc-3-icon@2x.png */; };
+		43691D2A1ADCC6E3003C949C /* iconmonstr-video-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 43691D261ADCC6E3003C949C /* iconmonstr-video-icon.png */; };
+		43691D2B1ADCC6E3003C949C /* iconmonstr-video-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43691D271ADCC6E3003C949C /* iconmonstr-video-icon@2x.png */; };
+		43691D2D1ADCDEDA003C949C /* DVDListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43691D2C1ADCDEDA003C949C /* DVDListViewController.swift */; };
 		43AF94071AD8E7D10076F3F9 /* MovieViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43AF94061AD8E7D10076F3F9 /* MovieViewCell.swift */; };
 		43B9102F1ADA3BA4003239C9 /* MovieListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B9102E1ADA3BA4003239C9 /* MovieListViewController.swift */; };
 		43B910311ADA520C003239C9 /* MovieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B910301ADA520C003239C9 /* MovieDetailViewController.swift */; };
@@ -38,6 +43,11 @@
 		43173F7A1AD8DF8300EC7DA2 /* RottenTomatoesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RottenTomatoesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		43173F7F1AD8DF8300EC7DA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		43173F801AD8DF8300EC7DA2 /* RottenTomatoesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RottenTomatoesTests.swift; sourceTree = "<group>"; };
+		43691D241ADCC6E3003C949C /* iconmonstr-disc-3-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconmonstr-disc-3-icon.png"; sourceTree = "<group>"; };
+		43691D251ADCC6E3003C949C /* iconmonstr-disc-3-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconmonstr-disc-3-icon@2x.png"; sourceTree = "<group>"; };
+		43691D261ADCC6E3003C949C /* iconmonstr-video-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconmonstr-video-icon.png"; sourceTree = "<group>"; };
+		43691D271ADCC6E3003C949C /* iconmonstr-video-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconmonstr-video-icon@2x.png"; sourceTree = "<group>"; };
+		43691D2C1ADCDEDA003C949C /* DVDListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DVDListViewController.swift; sourceTree = "<group>"; };
 		43AF94061AD8E7D10076F3F9 /* MovieViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieViewCell.swift; sourceTree = "<group>"; };
 		43B9102B1ADA3905003239C9 /* RottenTomatoes-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RottenTomatoes-Bridging-Header.h"; sourceTree = "<group>"; };
 		43B9102E1ADA3BA4003239C9 /* MovieListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieListViewController.swift; sourceTree = "<group>"; };
@@ -98,6 +108,7 @@
 				43B9102B1ADA3905003239C9 /* RottenTomatoes-Bridging-Header.h */,
 				43B9102E1ADA3BA4003239C9 /* MovieListViewController.swift */,
 				43B910301ADA520C003239C9 /* MovieDetailViewController.swift */,
+				43691D2C1ADCDEDA003C949C /* DVDListViewController.swift */,
 			);
 			path = RottenTomatoes;
 			sourceTree = "<group>";
@@ -105,6 +116,10 @@
 		43173F681AD8DF8300EC7DA2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				43691D241ADCC6E3003C949C /* iconmonstr-disc-3-icon.png */,
+				43691D251ADCC6E3003C949C /* iconmonstr-disc-3-icon@2x.png */,
+				43691D261ADCC6E3003C949C /* iconmonstr-video-icon.png */,
+				43691D271ADCC6E3003C949C /* iconmonstr-video-icon@2x.png */,
 				43173F691AD8DF8300EC7DA2 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -227,8 +242,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				43173F701AD8DF8300EC7DA2 /* Main.storyboard in Resources */,
+				43691D2B1ADCC6E3003C949C /* iconmonstr-video-icon@2x.png in Resources */,
 				43173F751AD8DF8300EC7DA2 /* LaunchScreen.xib in Resources */,
 				43173F721AD8DF8300EC7DA2 /* Images.xcassets in Resources */,
+				43691D281ADCC6E3003C949C /* iconmonstr-disc-3-icon.png in Resources */,
+				43691D2A1ADCC6E3003C949C /* iconmonstr-video-icon.png in Resources */,
+				43691D291ADCC6E3003C949C /* iconmonstr-disc-3-icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +298,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43691D2D1ADCDEDA003C949C /* DVDListViewController.swift in Sources */,
 				43B910311ADA520C003239C9 /* MovieDetailViewController.swift in Sources */,
 				43173F6B1AD8DF8300EC7DA2 /* AppDelegate.swift in Sources */,
 				43AF94071AD8E7D10076F3F9 /* MovieViewCell.swift in Sources */,
