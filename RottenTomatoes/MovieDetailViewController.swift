@@ -13,10 +13,19 @@ class MovieDetailViewController: UIViewController {
     @IBOutlet weak var posterView: UIImageView!
     @IBOutlet weak var descriptionView: UIScrollView!
     @IBOutlet weak var descriptionLabel: UILabel!
-
     
     var photoURL: String = ""
     var currentMovie: NSDictionary = NSDictionary()
+    
+    func convertToHiResURL(photoURL: String) -> String {
+        var range = photoURL.rangeOfString(".*cloudfront.net/", options: .RegularExpressionSearch)
+        var hiResURL: String = photoURL
+        
+        if let range = range {
+            hiResURL = photoURL.stringByReplacingCharactersInRange(range, withString: "https://content6.flixster.com/")
+        }
+        return hiResURL
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,13 +33,7 @@ class MovieDetailViewController: UIViewController {
         navigationItem.title = currentMovie["title"] as? String
 
         // Do any additional setup after loading the view.
-        var photoURL = currentMovie.valueForKeyPath("posters.original") as! String
-        
-        var range = photoURL.rangeOfString(".*cloudfront.net/", options: .RegularExpressionSearch)
-        
-        if let range = range {
-            photoURL = photoURL.stringByReplacingCharactersInRange(range, withString: "https://content6.flixster.com/")
-        }
+        var photoURL = convertToHiResURL(currentMovie.valueForKeyPath("posters.original") as! String)
         
         posterView.setImageWithURL(NSURL(string: photoURL))
         descriptionLabel.text = currentMovie["synopsis"] as? String

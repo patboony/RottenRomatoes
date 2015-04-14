@@ -12,13 +12,15 @@ class MovieListViewController: UIViewController, UITableViewDelegate, UITableVie
 
     @IBOutlet weak var tableView: UITableView!
     
+    // Array of NSDictionary storing information about movies obtained from RottenTomatues Feed
     var movies = []
     
+    // Storing the UILabel object representing the notification bar, which is shown when connection fails
     var notificationBar: UILabel?
     //For refreshControl
     var refreshControl: UIRefreshControl!
     
-    // Show notification bar at the top
+    // Show notification bar at the top - used when connection to the server fails
     func showTopBar(errorMessage: String) {
         
         if notificationBar != nil {
@@ -39,9 +41,18 @@ class MovieListViewController: UIViewController, UITableViewDelegate, UITableVie
         
     }
     
-    func removeTopBar(){
+    // Remove the notification bar at the tob
+    func removeTopBar() {
         notificationBar?.removeFromSuperview()
         notificationBar = nil
+    }
+    
+    // Used JGProgressHUD to create the loading notification
+    func showHUD(message: String) -> JGProgressHUD {
+        var HUD: JGProgressHUD = JGProgressHUD(style: JGProgressHUDStyle.Dark)
+        HUD.textLabel.text = message;
+        HUD.showInView(self.view)
+        return HUD
     }
     
     // Establish the connection to the server and parse JSON into movies (which is [NSDictionary])
@@ -49,14 +60,23 @@ class MovieListViewController: UIViewController, UITableViewDelegate, UITableVie
         let apikey = "3r58wrkvgxtzpebbdnm3chvx"
         var url = NSURL(string: "http://api.rottentomatoes.com/api/public/v1.0/lists/movies/box_office.json?apikey=\(apikey)")
         var request = NSURLRequest(URL: url!)
+        
+        // Test loading
+        
+        
         NSURLConnection.sendAsynchronousRequest(request, queue: NSOperationQueue.mainQueue()) { (response: NSURLResponse!, data: NSData!, error: NSError!) -> Void in
+            
+            // API loading
+            var apiLoadingHUD = self.showHUD("Loading")
             
             if error != nil {
                 NSLog("connection failed")
+                apiLoadingHUD.dismissAnimated(true)
                 self.showTopBar("Connection to RottenTomatoes Failed")
                 
             } else {
                 NSLog("connection successful")
+                apiLoadingHUD.dismissAnimated(true)
                 var json = NSJSONSerialization.JSONObjectWithData(data, options: nil, error: nil) as! NSDictionary
                 self.movies = json["movies"] as! NSArray
                 self.tableView.reloadData()
@@ -80,7 +100,7 @@ class MovieListViewController: UIViewController, UITableViewDelegate, UITableVie
         tableView.insertSubview(refreshControl, atIndex: 0)
         
         // load the table
-        tableView.rowHeight = 125
+        tableView.rowHeight = 100
         
         self.tableView.dataSource = self;
         self.tableView.delegate = self;
@@ -106,17 +126,9 @@ class MovieListViewController: UIViewController, UITableViewDelegate, UITableVie
         // What if force downcast fails?
         var photoURL = currentMovie.valueForKeyPath("posters.original") as! String
         
-        var range = photoURL.rangeOfString(".*cloudfront.net/", options: .RegularExpressionSearch)
-        
-        if let range = range {
-            photoURL = photoURL.stringByReplacingCharactersInRange(range, withString: "https://content6.flixster.com/")
-        }
-        
         cell.movieImageView.setImageWithURL(NSURL(string: photoURL))
         // Why use ?
         cell.movieTitleLabel.text = currentMovie["title"] as? String
-        
-
         
         var mpaa_rating = currentMovie["mpaa_rating"] as! String
         var synopsis = currentMovie["synopsis"] as! String

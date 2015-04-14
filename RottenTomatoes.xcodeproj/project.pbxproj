@@ -15,7 +15,7 @@
 		43AF94071AD8E7D10076F3F9 /* MovieViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43AF94061AD8E7D10076F3F9 /* MovieViewCell.swift */; };
 		43B9102F1ADA3BA4003239C9 /* MovieListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B9102E1ADA3BA4003239C9 /* MovieListViewController.swift */; };
 		43B910311ADA520C003239C9 /* MovieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B910301ADA520C003239C9 /* MovieDetailViewController.swift */; };
-		AC45864129A718BCE35236A1 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 88A0A7415F19E267B667BCAB /* libPods.a */; };
+		86F8CC5DC4E9C86445C32157 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C7741FA47E3677F9C2FF932E /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,8 +43,8 @@
 		43B9102E1ADA3BA4003239C9 /* MovieListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieListViewController.swift; sourceTree = "<group>"; };
 		43B910301ADA520C003239C9 /* MovieDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieDetailViewController.swift; sourceTree = "<group>"; };
 		882E3A708200A365CA522FE9 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		88A0A7415F19E267B667BCAB /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA4D0F05C70C5FE2C68C4CB0 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		C7741FA47E3677F9C2FF932E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC45864129A718BCE35236A1 /* libPods.a in Frameworks */,
+				86F8CC5DC4E9C86445C32157 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,7 +130,7 @@
 		610243FD63503AADD5AE7DDC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				88A0A7415F19E267B667BCAB /* libPods.a */,
+				C7741FA47E3677F9C2FF932E /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

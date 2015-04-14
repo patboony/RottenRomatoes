@@ -8,25 +8,31 @@
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>3</integer>
+		</dict>
+		<key>Pods-JGProgressHUD.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Pods.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>2</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>3BB983D55027FD38F51C8140</key>
+		<key>018E262EF7CC99683DEB7002</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8E0A0B13F73079742B7F8E21</key>
+		<key>386CD7C22E7F7BAFD7799260</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>863007C11D2505B7525609BF</key>
 		<dict>
 			<key>primary</key>
 			<true/>
